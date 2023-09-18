@@ -1,0 +1,26 @@
+version: "2.4"
+services:
+  sarpinhas_db:
+    image: mysql
+    container_name: sarpinhas
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - sarpinhas_data:/var/lib/mysql
+
+  sisantinho_db:
+    image: mysql
+    container_name: sisantinho
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3307:3306"
+    volumes:
+      - sisantinho_data:/var/lib/mysql
+
+
+volumes:
+  sarpinhas_data:
+  sisantinho_data:
