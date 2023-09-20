@@ -24,3 +24,38 @@ CREATE TABLE sisantinho.UAS (
         ON DELETE NO ACTION
         ON UPDATE NO ACTION
 );
+
+
+INSERT INTO sisantinho.UAS (
+    manufacturer,
+    model,
+    operator_id,
+    maximum_flying_weigh,
+    serial_number,
+    experimental
+  )
+VALUES (
+    'DJI',
+    'mavic 3',
+    1,
+    '895.0',
+    'AJDJ38893',
+    '1'
+  );
+
+INSERT INTO sisantinho.UAS (
+    manufacturer,
+    model,
+    operator_id,
+    maximum_flying_weigh,
+    serial_number,
+    experimental
+  )
+VALUES (
+    'Parrot',
+    'Bobop 2',
+    1,
+    '400.0',
+    'AJDJ38893',
+    '0'
+  );
