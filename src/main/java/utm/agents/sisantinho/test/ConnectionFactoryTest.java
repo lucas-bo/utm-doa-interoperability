@@ -1,16 +1,17 @@
-package mysql.agents.test;
+package utm.agents.sisantinho.test;
 
-import mysql.agents.domain.Operator;
-import mysql.agents.repository.OperatorRepository;
+import utm.agents.sisantinho.domain.Operator;
+import utm.agents.sisantinho.service.OperatorService;
 
 public class ConnectionFactoryTest {
     public static void main(String[] args) {
         Operator operator = 
             Operator.builder()
+                .id(2)
                 .name("Larissa Bastos Oliveira")
-                .cpf(12378878)
+                .cpf(12378)
                 .email("larissa.oliveira@ga.ita.br")
                 .build();
-        OperatorRepository.save(operator);
+        OperatorService.update(operator);
     }
 }

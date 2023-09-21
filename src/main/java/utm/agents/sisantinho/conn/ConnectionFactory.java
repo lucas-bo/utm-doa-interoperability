@@ -1,4 +1,4 @@
-package mysql.agents.conn;
+package utm.agents.sisantinho.conn;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

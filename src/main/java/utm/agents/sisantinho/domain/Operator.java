@@ -1,4 +1,4 @@
-package mysql.agents.domain;
+package utm.agents.sisantinho.domain;
 
 import lombok.Builder;
 import lombok.Value;
