@@ -20,7 +20,18 @@ services:
     volumes:
       - sisantinho_data:/var/lib/mysql
 
+  uss_1_db:
+    image: mysql
+    container_name: uss_1
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3308:3306"
+    volumes:
+      - uss_1_data:/var/lib/mysql
+
 
 volumes:
   sarpinhas_data:
   sisantinho_data:
+  uss_1_data:
