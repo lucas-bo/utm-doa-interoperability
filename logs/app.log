@@ -1,3 +1,155 @@
 2023-09-18 16:15:10,958 INFO m.a.r.OperatorRepository [main] Database rows affected 1
 2023-09-18 17:39:16,239 INFO m.a.r.OperatorRepository [main] Database rows affected 1
 2023-09-20 22:31:51,350 INFO m.a.r.OperatorRepository [main] Database rows affected 1
+2023-10-13 01:13:40,903 ERROR u.a.u.r.UASRepository [main] Error while trying to insert uas 'AJDJ38893'
+java.sql.SQLSyntaxErrorException: Unknown database 'uss_1'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:440) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at utm.agents.uss_1.conn.ConnectionFactory.getConnection(ConnectionFactory.java:13) ~[classes/:?]
+	at utm.agents.uss_1.repository.UASRepository.save(UASRepository.java:19) [classes/:?]
+	at utm.agents.uss_1.service.UASService.save(UASService.java:8) [classes/:?]
+	at utm.agents.uss_1.test.ConnectionFactoryTest.main(ConnectionFactoryTest.java:18) [classes/:?]
+2023-10-13 01:13:41,040 ERROR u.a.u.r.UASRepository [main] Error while trying to insert uas 'SDJ-334-344LL'
+java.sql.SQLSyntaxErrorException: Unknown database 'uss_1'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:440) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at utm.agents.uss_1.conn.ConnectionFactory.getConnection(ConnectionFactory.java:13) ~[classes/:?]
+	at utm.agents.uss_1.repository.UASRepository.save(UASRepository.java:19) [classes/:?]
+	at utm.agents.uss_1.service.UASService.save(UASService.java:8) [classes/:?]
+	at utm.agents.uss_1.test.ConnectionFactoryTest.main(ConnectionFactoryTest.java:19) [classes/:?]
+2023-10-13 01:15:00,529 ERROR u.a.u.r.UASRepository [main] Error while trying to insert uas 'AJDJ38893'
+java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1334) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2084) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at utm.agents.uss_1.repository.UASRepository.save(UASRepository.java:22) [classes/:?]
+	at utm.agents.uss_1.service.UASService.save(UASService.java:8) [classes/:?]
+	at utm.agents.uss_1.test.ConnectionFactoryTest.main(ConnectionFactoryTest.java:18) [classes/:?]
+2023-10-13 01:15:00,868 ERROR u.a.u.r.UASRepository [main] Error while trying to insert uas 'SDJ-334-344LL'
+java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1334) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2084) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at utm.agents.uss_1.repository.UASRepository.save(UASRepository.java:22) [classes/:?]
+	at utm.agents.uss_1.service.UASService.save(UASService.java:8) [classes/:?]
+	at utm.agents.uss_1.test.ConnectionFactoryTest.main(ConnectionFactoryTest.java:19) [classes/:?]
+2023-10-13 01:17:50,650 ERROR u.a.u.r.UASRepository [main] Error while trying to insert uas 'AJDJ38893'
+java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1334) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2084) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at utm.agents.uss_1.repository.UASRepository.save(UASRepository.java:22) [classes/:?]
+	at utm.agents.uss_1.service.UASService.save(UASService.java:8) [classes/:?]
+	at utm.agents.uss_1.test.ConnectionFactoryTest.main(ConnectionFactoryTest.java:22) [classes/:?]
+2023-10-13 01:17:50,743 ERROR u.a.u.r.UASRepository [main] Error while trying to insert uas 'SDJ-334-344LL'
+java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1334) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2084) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at utm.agents.uss_1.repository.UASRepository.save(UASRepository.java:22) [classes/:?]
+	at utm.agents.uss_1.service.UASService.save(UASService.java:8) [classes/:?]
+	at utm.agents.uss_1.test.ConnectionFactoryTest.main(ConnectionFactoryTest.java:23) [classes/:?]
+2023-10-13 01:25:56,928 ERROR u.a.u.r.UASRepository [main] Error while trying to insert uas 'AJDJ38893'
+java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1334) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2084) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at utm.agents.uss_1.repository.UASRepository.save(UASRepository.java:22) [classes/:?]
+	at utm.agents.uss_1.service.UASService.save(UASService.java:8) [classes/:?]
+	at utm.agents.uss_1.test.ConnectionFactoryTest.main(ConnectionFactoryTest.java:22) [classes/:?]
+2023-10-13 01:25:57,032 ERROR u.a.u.r.UASRepository [main] Error while trying to insert uas 'SDJ-334-344LL'
+java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1334) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2084) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at utm.agents.uss_1.repository.UASRepository.save(UASRepository.java:22) [classes/:?]
+	at utm.agents.uss_1.service.UASService.save(UASService.java:8) [classes/:?]
+	at utm.agents.uss_1.test.ConnectionFactoryTest.main(ConnectionFactoryTest.java:23) [classes/:?]
+2023-10-13 01:48:20,861 ERROR u.a.u.r.UASRepository [main] Error while trying to insert uas 'AJDJ38893'
+java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1334) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2084) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at utm.agents.uss_1.repository.UASRepository.save(UASRepository.java:22) [classes/:?]
+	at utm.agents.uss_1.service.UASService.save(UASService.java:8) [classes/:?]
+	at utm.agents.uss_1.test.ConnectionFactoryTest.main(ConnectionFactoryTest.java:22) [classes/:?]
+2023-10-13 02:10:47,139 INFO u.a.u.r.UASRepository [main] Database rows affected 1
+2023-10-13 02:10:47,919 INFO u.a.u.r.UASRepository [main] Database rows affected 1
+2023-10-13 06:24:05,969 INFO u.a.u.r.UASRepository [main] Finding all UASs
+2023-10-13 06:24:07,628 INFO u.a.u.t.ConnectionFactoryTest [main] UASs found: '[UAS(id=1, serial_number=AJDJ38893, latitude=0.0, longitude=0.0), UAS(id=2, serial_number=SDJ-334-344LL, latitude=0.0, longitude=0.0)]'
+2023-10-13 07:18:16,635 INFO u.a.u.r.UASRepository [main] Finding all UASs
+2023-10-13 07:18:17,589 INFO u.a.u.r.UASRepository [main] Finding all UASs
+2023-10-13 07:18:17,815 INFO u.a.u.t.ConnectionFactoryTest [main] UASs found: '[UAS(id=1, serial_number=AJDJ38893, latitude=0.0, longitude=0.0)]'
+2023-10-13 07:23:24,085 INFO u.a.u.r.UASRepository [main] Finding all UASs
+2023-10-13 07:23:24,582 INFO u.a.u.r.UASRepository [main] Finding UAS with serial number part: 'AJDJ'.
+2023-10-13 07:23:24,732 INFO u.a.u.t.ConnectionFactoryTest [main] UASs found: '[UAS(id=1, serial_number=AJDJ38893, latitude=0.0, longitude=0.0)]'
+2023-10-13 20:34:45,806 INFO u.a.u.r.UASRepository [main] Finding all UASs
+2023-10-13 20:34:46,999 INFO u.a.u.r.UASRepository [main] Finding UAS with serial number part: 'AJDJ'.
+2023-10-13 20:34:47,166 INFO u.a.u.t.ConnectionFactoryTest [main] UASs found: '[UAS(id=1, serial_number=AJDJ38893, latitude=0.0, longitude=0.0)]'
+2023-10-13 20:34:47,167 INFO u.a.u.r.UASACARepository [main] Finding UAS in sisantinho by serial number: AJDJ38893
+2023-10-13 20:34:47,474 ERROR u.a.u.r.UASACARepository [main] Error trying to find UAS with serial number: 'AJDJ38893'
+java.sql.SQLSyntaxErrorException: Unknown database 'sisantinho'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:440) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at java.sql.DriverManager.getConnection(DriverManager.java:681) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:229) ~[java.sql:?]
+	at utm.agents.uss_1.conn.ConnectionFactory.getACAConnection(ConnectionFactory.java:21) ~[classes/:?]
+	at utm.agents.uss_1.repository.UASACARepository.findBySerialNumber(UASACARepository.java:31) [classes/:?]
+	at utm.agents.uss_1.repository.UASACARepository.findHowManyBySerialNumber(UASACARepository.java:55) [classes/:?]
+	at utm.agents.uss_1.service.UASService.checkIfRegisteredBySerialNumber(UASService.java:23) [classes/:?]
+	at utm.agents.uss_1.test.ConnectionFactoryTest.main(ConnectionFactoryTest.java:34) [classes/:?]
+2023-10-13 20:34:47,499 INFO u.a.u.t.ConnectionFactoryTest [main] UAS with serial number 'AJDJ38893' is not registered
+2023-10-13 20:34:47,499 INFO u.a.u.r.UASACARepository [main] Finding UAS in sisantinho by serial number: SDJ-334-344LL
+2023-10-13 20:34:47,644 ERROR u.a.u.r.UASACARepository [main] Error trying to find UAS with serial number: 'SDJ-334-344LL'
+java.sql.SQLSyntaxErrorException: Unknown database 'sisantinho'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:440) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at java.sql.DriverManager.getConnection(DriverManager.java:681) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:229) ~[java.sql:?]
+	at utm.agents.uss_1.conn.ConnectionFactory.getACAConnection(ConnectionFactory.java:21) ~[classes/:?]
+	at utm.agents.uss_1.repository.UASACARepository.findBySerialNumber(UASACARepository.java:31) [classes/:?]
+	at utm.agents.uss_1.repository.UASACARepository.findHowManyBySerialNumber(UASACARepository.java:55) [classes/:?]
+	at utm.agents.uss_1.service.UASService.checkIfRegisteredBySerialNumber(UASService.java:23) [classes/:?]
+	at utm.agents.uss_1.test.ConnectionFactoryTest.main(ConnectionFactoryTest.java:34) [classes/:?]
+2023-10-13 20:34:47,645 INFO u.a.u.t.ConnectionFactoryTest [main] UAS with serial number 'SDJ-334-344LL' is not registered
+2023-10-13 20:38:12,576 INFO u.a.u.r.UASRepository [main] Finding all UASs
+2023-10-13 20:38:13,320 INFO u.a.u.r.UASRepository [main] Finding UAS with serial number part: 'AJDJ'.
+2023-10-13 20:38:13,521 INFO u.a.u.t.ConnectionFactoryTest [main] UASs found: '[UAS(id=1, serial_number=AJDJ38893, latitude=0.0, longitude=0.0)]'
+2023-10-13 20:38:13,524 INFO u.a.u.r.UASACARepository [main] Finding UAS in sisantinho by serial number: AJDJ38893
+2023-10-13 20:38:14,163 INFO u.a.u.t.ConnectionFactoryTest [main] UAS with serial number 'AJDJ38893' is registered
+2023-10-13 20:38:14,163 INFO u.a.u.r.UASACARepository [main] Finding UAS in sisantinho by serial number: SDJ-334-344LL
+2023-10-13 20:38:14,295 INFO u.a.u.t.ConnectionFactoryTest [main] UAS with serial number 'SDJ-334-344LL' is not registered
